@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="demo2">What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello World"'>Change h2</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Good Morning JavaScript"'>Change paragraph</button>
+
+<br><br><hr><br><br>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<br><br>
+
+<img id="tach" src="tach-idle.png" style="width:300px">
+
+<br>
+
+<p>
+<button onclick="document.getElementById('tach').src='tach-idle.png'">Idle</button>
+<button onclick="document.getElementById('tach').src='tach-redline.png'">Redline</button>
+</p>
+
+<br><br><hr><br><br>
+
+<p id="demo3">JavaScript can change the style of an HTML element.</p>
+
+<br><br>
+
+<button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Change fontSize</button>
+
+<button type="button" onclick="document.getElementById('demo3').style.color = 'red'">Change Font Color</button>
+
+<button type="button" onclick="document.getElementById('demo3').style.border = '3px solid navy'">Change border</button>
+
+<button type="button" onclick="document.getElementById('demo3').style.padding = '50px'">Change Padding size</button>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Hide Paragraph</button>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Show Paragraph</button>
+
+<br><br><hr><br><br>
+
+</body>
+</html>
