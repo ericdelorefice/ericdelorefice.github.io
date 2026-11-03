@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Work from CSC-1210 Web Site Development, Fall 2026. This page is a CSS Grid that goes from one column on a phone, to two on a tablet, to three on a laptop.
+Coursework from CSC-1210 Web Site Development at High Point University, Fall 2026. The cards below sit in a CSS Grid that goes from one column on a phone, to two on a tablet, to three on a laptop.
 
 <div class="project-grid">
 
@@ -26,4 +26,22 @@ Work from CSC-1210 Web Site Development, Fall 2026. This page is a CSS Grid that
 <span class="tag">Bootstrap 4</span><span class="tag">Components</span>
 </div>
 
+</div>
+
+## What the class has covered
+
+<button type="button" class="toggle-btn" onclick="document.getElementById('learned').style.display='block'">Show the list</button>
+<button type="button" class="toggle-btn" onclick="document.getElementById('learned').style.display='none'">Hide</button>
+
+<div id="learned">
+<ul>
+<li>Semantic HTML5 structure: header, nav, main, section, article, aside, footer</li>
+<li>CSS selectors, the box model, borders, padding and margins</li>
+<li>Flexbox for one dimensional layout</li>
+<li>CSS Grid for two dimensional layout</li>
+<li>Responsive design with media queries for mobile, tablet and desktop</li>
+<li>Reset stylesheets</li>
+<li>Bootstrap 4 and its twelve column grid</li>
+<li>JavaScript with getElementById to change content, attributes and styles</li>
+</ul>
 </div>

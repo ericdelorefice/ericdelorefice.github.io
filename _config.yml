@@ -1,10 +1,9 @@
 title: Eric Del Orefice
-description: CSC-1210 coursework, plus notes on agent reliability and the failures that report success.
+description: Notes on agent reliability and the failures that report success.
 theme: minima
 author: Eric Del Orefice
 header_pages:
   - projects.md
-  - blog.md
 minima:
   social_links:
     github: ericdelorefice
