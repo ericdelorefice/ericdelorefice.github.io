@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Practice</title>
+
+        <!-- Bootstrap 4 CSS from the CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="container mt-4">
+
+            <h1 class="mb-4">Bootstrap Practice</h1>
+
+            <!-- 4 columns: col-md-3 four times fills the 12 column row -->
+            <div class="row">
+
+                <!-- COLUMN 1 - ALERT -->
+                <div class="col-md-3">
+                    <h5>1. Alert</h5>
+                    <div class="alert alert-warning alert-dismissible fade show">
+                        <strong>Heads up.</strong> This alert can be closed.
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2 - BUTTONS -->
+                <div class="col-md-3">
+                    <h5>2. Buttons</h5>
+                    <button type="button" class="btn btn-primary btn-block">Primary</button>
+                    <button type="button" class="btn btn-success btn-block">Success</button>
+                    <button type="button" class="btn btn-outline-danger btn-block">Outline</button>
+                </div>
+
+                <!-- COLUMN 3 - CARD -->
+                <div class="col-md-3">
+                    <h5>3. Card</h5>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">A card is just a bordered box with padding built in.</p>
+                            <a href="#" class="btn btn-secondary">Go</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMN 4 - PROGRESS BAR AND BADGE -->
+                <div class="col-md-3">
+                    <h5>4. Progress Bar</h5>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-info" style="width: 70%">70%</div>
+                    </div>
+                    <span class="badge badge-pill badge-dark">Badge</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bootstrap 4 needs jQuery for the dismissible alert to work -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
