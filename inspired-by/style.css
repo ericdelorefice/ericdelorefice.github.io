@@ -1,0 +1,277 @@
+/* MY STYLES */
+/* Eric Del Orefice - CSC 1210 */
+/* The reset styles are in reset.css, linked before this file */
+
+
+/* ---- stuff that stays the same at every size ---- */
+
+body {
+    font-family: "Lora", serif;
+    font-size: 12pt;
+    background-color: #f4efe6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0px 15px;
+
+    /* header, nav, main and footer always stay in one column */
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    row-gap: 20px;
+}
+
+h2, h3, h4 {
+    font-family: "Cinzel", serif;
+}
+
+h1 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 28pt;
+    margin: 0px;
+}
+
+header {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 20px;
+    grid-row: 1;
+}
+
+/* the reset wipes out every margin so I added this one back */
+header p {
+    margin-top: 8px;
+}
+
+nav {
+    background-color: #8a6d3b;
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: #3b2f2f;
+    border-width: 0px 2px 4px 2px;
+
+    display: grid;
+    gap: 10px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+nav a {
+    color: white;
+    padding: 4px 8px;
+}
+
+nav a:hover {
+    background-color: #3b2f2f;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+    grid-row: 3;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #c9b99a;
+
+    display: grid;
+    row-gap: 14px;
+    grid-column: 1;
+}
+
+/* same deal, putting the spacing back after the reset */
+article h3 {
+    margin-bottom: 6px;
+}
+
+aside {
+    display: grid;
+    gap: 20px;
+    align-content: start;
+}
+
+footer {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 12px;
+
+    display: grid;
+    place-content: center;
+    grid-row: 4;
+}
+
+/* keeps the date box from stretching across the column */
+#dates {
+    background-color: #e6dccb;
+    border: 1px solid #8a6d3b;
+    padding: 5px 12px;
+    justify-self: start;
+}
+
+#painting {
+    border: 5px solid #8a6d3b;
+    place-self: center;
+}
+
+/* order puts Learn More above the quote without changing the HTML */
+#links {
+    order: 1;
+}
+
+#quote {
+    order: 2;
+    align-self: start;
+}
+
+.box {
+    background-color: #e6dccb;
+    padding: 15px 20px;
+    border: 2px solid #8a6d3b;
+}
+
+.box h3 {
+    margin-bottom: 8px;
+}
+
+.box li {
+    margin-bottom: 4px;
+}
+
+.highlight {
+    border-left: 6px solid #8a6d3b;
+    padding-left: 10px;
+}
+
+.verse {
+    font-size: 10pt;
+    margin-top: 8px;
+}
+
+
+/* ---- 3 NEW STYLES ---- */
+
+/* NEW STYLE 1 of 3 - border-radius, rounds off the corners */
+header,
+nav,
+article,
+footer,
+.box {
+    border-radius: 8px;
+}
+
+#dates {
+    border-radius: 6px;
+}
+
+#painting,
+nav a {
+    border-radius: 4px;
+}
+
+/* NEW STYLE 2 of 3 - box-shadow, makes the boxes sit above the background */
+article,
+.box {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* NEW STYLE 3 of 3 - transition, fades the nav hover color in instead of snapping */
+nav a {
+    transition: background-color 0.3s;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+/* MOBILE - everything in one column, nav links stacked so they are easier to tap */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28pt;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    article,
+    aside {
+        grid-column: 1;
+    }
+
+    aside {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TABLET - two columns in the middle, header and footer still full width */
+@media (min-width: 601px) and (max-width: 1023px) {
+    h1 {
+        font-size: 36pt;
+    }
+
+    nav {
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    article {
+        grid-column: 1;
+    }
+
+    aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* LAPTOP/MONITOR - three columns in the middle, and the page gets wider to fit them */
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 40pt;
+    }
+
+    nav {
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    /* display: contents drops the aside box so its two children
+       can be columns of main instead */
+    aside {
+        display: contents;
+    }
+
+    article {
+        padding: 20px 30px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #links {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: start;
+    }
+
+    #quote {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: start;
+    }
+}
