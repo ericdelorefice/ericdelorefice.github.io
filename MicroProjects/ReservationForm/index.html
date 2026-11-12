@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Your Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Bruce Buffer's Bakery</h1>
+    <h2>Reserve Your Table</h2>
+    <p>
+        Welcome to Bruce Buffer's Bakery. Fill out the form below and we will
+        hold a table for you. It's time!
+    </p>
+
+    <form>
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname">
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone">
+        </fieldset>
+
+        <fieldset>
+            <legend>Reservation Information</legend>
+
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date">
+
+            <label for="time">Reservation Time:</label>
+            <select id="time">
+                <option>7:00 AM</option>
+                <option>8:00 AM</option>
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+            </select>
+
+            <label for="guests">Number of Guests:</label>
+            <select id="guests">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+            </select>
+
+            <p>Seating Preference:</p>
+            <input type="radio" name="seating" id="indoor">
+            <label for="indoor" class="radio-label">Indoor</label>
+            <input type="radio" name="seating" id="outdoor">
+            <label for="outdoor" class="radio-label">Outdoor</label>
+            <input type="radio" name="seating" id="nopreference">
+            <label for="nopreference" class="radio-label">No Preference</label>
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" rows="4" placeholder="Allergies, birthdays, accessibility needs, or anything else we should know"></textarea>
+        </fieldset>
+
+        <button type="submit">Request Reservation</button>
+    </form>
+
+</body>
+</html>
