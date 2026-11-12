@@ -5,27 +5,22 @@
 
 @import "minima";
 
-/* ---- my styles on top of the minima theme ---- */
-
-$navy: #1b3a5c;
-$accent: #c8102e;
-$card: #ffffff;
-$line: #d8dee6;
+/* my styles on top of the minima theme */
 
 body {
     background-color: #f4f6f8;
 }
 
 .site-header {
-    border-top: 5px solid $navy;
-    border-bottom: 1px solid $line;
-    background-color: $card;
+    border-top: 5px solid #1b3a5c;
+    border-bottom: 1px solid #d8dee6;
+    background-color: #ffffff;
 }
 
 .site-title,
 .site-title:visited {
-    color: $navy;
-    font-weight: 700;
+    color: #1b3a5c;
+    font-weight: bold;
 }
 
 /* nav links in a row with flexbox */
@@ -35,27 +30,27 @@ body {
 }
 
 .site-nav .page-link {
-    color: $navy;
+    color: #1b3a5c;
     padding: 4px 10px;
     border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .site-nav .page-link:hover {
-    background-color: $navy;
-    color: $card;
+    background-color: #1b3a5c;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .page-content {
-    padding: 40px 0;
+    padding: 40px 0px;
 }
 
 h1, h2, h3 {
-    color: $navy;
+    color: #1b3a5c;
 }
 
-/* ---- project cards in a grid ---- */
+/* project cards in a grid */
 
 .project-grid {
     display: grid;
@@ -65,18 +60,17 @@ h1, h2, h3 {
 }
 
 .project-card {
-    background-color: $card;
-    border: 1px solid $line;
-    border-left: 5px solid $navy;
+    background-color: #ffffff;
+    border: 1px solid #d8dee6;
+    border-left: 5px solid #1b3a5c;
     border-radius: 8px;
     padding: 20px 25px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s, transform 0.3s;
+    transition: box-shadow 0.3s;
 }
 
 .project-card:hover {
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
 }
 
 .project-card h3 {
@@ -84,7 +78,7 @@ h1, h2, h3 {
 }
 
 .project-card h3 a {
-    color: $navy;
+    color: #1b3a5c;
 }
 
 .project-card p {
@@ -95,48 +89,47 @@ h1, h2, h3 {
 .tag {
     display: inline-block;
     background-color: #e8eef4;
-    color: $navy;
+    color: #1b3a5c;
     border-radius: 12px;
     padding: 3px 12px;
     font-size: 13px;
     margin-right: 6px;
 }
 
-/* ---- the learned list the button toggles ---- */
+/* the list the button shows and hides */
 
 #learned {
     display: none;
-    background-color: $card;
-    border: 1px solid $line;
+    background-color: #ffffff;
+    border: 1px solid #d8dee6;
     border-radius: 8px;
     padding: 10px 30px;
     margin-top: 20px;
 }
 
 .toggle-btn {
-    background-color: $navy;
-    color: $card;
+    background-color: #1b3a5c;
+    color: #ffffff;
     border: none;
     border-radius: 6px;
     padding: 10px 18px;
     font-size: 15px;
     font-family: inherit;
-    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .toggle-btn:hover {
-    background-color: $accent;
+    background-color: #c8102e;
 }
 
-/* ---- TABLET: two columns ---- */
+/* TABLET: two columns */
 @media (min-width: 601px) {
     .project-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-/* ---- LAPTOP/MONITOR: three columns ---- */
+/* LAPTOP: three columns */
 @media (min-width: 1024px) {
     .project-grid {
         grid-template-columns: 1fr 1fr 1fr;
