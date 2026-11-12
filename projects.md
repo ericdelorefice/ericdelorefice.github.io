@@ -40,8 +40,8 @@ Coursework from CSC-1210 Web Site Development at High Point University, Fall 202
 
 <div class="project-card">
 <h3><a href="/BlackbirdATLAS/" target="_blank">3 Week AI Project</a></h3>
-<p>Blackbird ATLAS, a fitness training site for AFROTC Detachment 605. One prompt was given to Claude, Copilot and Gemini, then all three builds were tested, measured across browsers and corrected. This is the corrected Claude build, which validates clean on the W3C HTML and CSS checkers.</p>
-<span class="tag">AI Build</span><span class="tag">Validated</span>
+<p>Blackbird ATLAS, a fitness training site for AFROTC Detachment 605. One prompt was pasted unchanged into Claude, Copilot and Gemini, so the AI was the only thing that changed. All three were then tested, measured across browsers and corrected. All three corrected builds are linked, and all three validate clean.</p>
+<span class="tag">Claude</span><span class="tag">Copilot</span><span class="tag">Gemini</span>
 </div>
 
 <div class="project-card">
