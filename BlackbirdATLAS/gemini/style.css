@@ -1,0 +1,243 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: #fff;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #00205b; /* AFROTC dark blue */
+}
+
+a {
+    color: #004080;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+    background-color: #00205b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+}
+
+/* ==========================================================================
+   Nav (Tabs)
+   ========================================================================== */
+nav {
+    background-color: #ddd;
+    border-bottom: 3px solid #00205b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    background-color: #eaeaea;
+}
+
+nav a:hover, 
+nav a:focus {
+    background-color: #f4f4f9;
+    color: #00205b;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #00205b;
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ==========================================================================
+   Exercise Form & Media
+   ========================================================================== */
+article {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+figure {
+    margin: 15px 0;
+    display: block;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    display: block;
+    margin-top: 15px;
+}
+
+blockquote {
+    font-style: italic;
+    background: #e9ecef;
+    border-left: 5px solid #00205b;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+legend {
+    font-weight: bold;
+    color: #00205b;
+    padding: 0 10px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #00205b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #003388;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
