@@ -1,316 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blackbird ATLAS | Det 605 Training Outside of PMT</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3 Week AI Project | Eric Del Orefice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/det605-patch.png" alt="AFROTC Detachment 605 Screaming Blackbirds patch" width="90">
+            <h1>Blackbird ATLAS</h1>
+            <p>The 3 Week AI Website Challenge, CSC-1210, Fall 2026</p>
+        </header>
 
-  <!-- ===== HEADER ===== -->
-  <header>
-    <img src="images/det605-patch.png" alt="AFROTC Detachment 605 Screaming Blackbirds patch" width="100" height="100">
-    <div class="header-text">
-      <h1>Blackbird ATLAS</h1>
-      <p class="subtitle">Det 605 Training Outside of PMT</p>
-    </div>
-  </header>
+        <main>
+            <section>
+                <h2>What this was</h2>
+                <p>Blackbird ATLAS is a fitness training site for AFROTC Detachment 605. I wrote one prompt and pasted it unchanged into three different AI tools, so the only thing that changed between the three sites was the AI that built it.</p>
+                <p>Week 1 was generating the sites. Week 2 was testing them, running both of the W3C validators, taking screenshots in Chrome and Firefox and measuring where things actually landed on the page. Week 3 was writing a correction prompt for each AI and letting it fix its own mistakes.</p>
+                <p>The three sites below are the corrected versions. All three pass the W3C HTML and CSS checkers with no errors.</p>
+            </section>
 
-  <!-- ===== NAVIGATION (styled as tabs in style.css) ===== -->
-  <nav>
-    <ul>
-      <li><a href="#training-plan">Training Plan</a></li>
-      <li><a href="#exercise-form">How To: Exercise Form</a></li>
-      <li><a href="#alternate-exercises">Alternate Exercises</a></li>
-      <li><a href="#reference">Reference: Nutrition, Bloodwork, and Recovery</a></li>
-      <li><a href="#request-form">Request an Alternate</a></li>
-    </ul>
-  </nav>
+            <h2>The three builds</h2>
 
-  <main>
+            <div class="grid">
+                <div class="card">
+                    <h3><a href="claude/index.html">Claude</a></h3>
+                    <p>Built by Claude, then corrected in round one.</p>
+                </div>
 
-    <!-- ===== SECTION 1: TRAINING PLAN ===== -->
-    <section id="training-plan">
-      <h2>Training Plan (This Week)</h2>
+                <div class="card">
+                    <h3><a href="copilot/index.html">Copilot</a></h3>
+                    <p>Built by GitHub Copilot, then corrected in round one.</p>
+                </div>
 
-      <div class="table-wrap">
-        <table>
-          <caption>Weekly training plan</caption>
-          <thead>
-            <tr>
-              <th scope="col">Day</th>
-              <th scope="col">Strength</th>
-              <th scope="col">Cardio</th>
-              <th scope="col">Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Monday</th>
-              <td>Det PT "Full Throttle": 40-minute <abbr title="Every Minute On the Minute">EMOM</abbr> (8 exercises, 1 per minute: hand release push ups, squat jumps, diamond push ups, lunges, sit ups, leg raises, American twists, plank) with a 400 m relay lap rotation</td>
-              <td>Relay laps count</td>
-              <td>0600 Truist Stadium</td>
-            </tr>
-            <tr>
-              <th scope="row">Tuesday</th>
-              <td>Upper A: bench press, bent-over row, overhead press, pull-ups, tricep dips</td>
-              <td>Easy run 3 mi</td>
-              <td>Conversational pace</td>
-            </tr>
-            <tr>
-              <th scope="row">Wednesday</th>
-              <td>Lower A: back squat, Romanian deadlift, walking lunges, calf raises</td>
-              <td>Tempo run 3 mi</td>
-              <td>Last mile at goal <abbr title="Physical Fitness Readiness Assessment">PFRA</abbr> pace</td>
-            </tr>
-            <tr>
-              <th scope="row">Thursday</th>
-              <td>Det PT "Final Approach": pace-group descent 1600 m, 1200 m, 800 m, 400 m, each leg 5 sec per lap faster, rest half the run time</td>
-              <td>4000 m total</td>
-              <td>0600 Truist Stadium</td>
-            </tr>
-            <tr>
-              <th scope="row">Friday</th>
-              <td>Upper B: incline dumbbell press, lat pulldown, lateral raises, face pulls, hand release push ups 3 x max</td>
-              <td>400 m intervals x 6, 90 sec rest</td>
-              <td>Run in lanes 2–4</td>
-            </tr>
-            <tr>
-              <th scope="row">Saturday</th>
-              <td>Lower B: front squat, hip thrust, step-ups, hamstring curls</td>
-              <td>Long run 5 mi</td>
-              <td>60–90 sec per mile slower than goal pace</td>
-            </tr>
-            <tr>
-              <th scope="row">Sunday</th>
-              <td>Rest</td>
-              <td>20-minute walk</td>
-              <td>Mobility and sleep</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+                <div class="card">
+                    <h3><a href="gemini/index.html">Gemini</a></h3>
+                    <p>Built by Google Gemini, then corrected in round one.</p>
+                </div>
+            </div>
+        </main>
 
-      <h3>Test week: Preflight taper</h3>
-      <p>For cadets testing next week:</p>
-      <ol>
-        <li>2 x 800 m at goal 2-mile pace, walk rest</li>
-        <li>Push up rehearsal: 30 s / 20 s / 10 perfect reps</li>
-        <li>Sit up rehearsal: 30 s / 20 s / 10 perfect reps</li>
-        <li>4 x 100 m strides</li>
-        <li>Full cool-down stretch</li>
-      </ol>
-      <p><strong>Nothing in the taper goes to failure, and no volume is added.</strong></p>
-    </section>
-
-    <!-- ===== SECTION 2: EXERCISE FORM ===== -->
-    <section id="exercise-form">
-      <h2>How To: Exercise Form</h2>
-
-      <article class="exercise">
-        <h3>Hand Release Push Up</h3>
-        <ul>
-          <li>Chest, hips, and thighs go down together</li>
-          <li>Lift both hands off the ground</li>
-          <li>Press to full lockout</li>
-          <li>Body stays in one line</li>
-        </ul>
-        <figure>
-          <img src="images/hrpu.jpg" alt="Cadet at the bottom of a hand release push up with chest on the ground and both hands lifted">
-          <figcaption>Hand release push up, bottom position.</figcaption>
-        </figure>
-        <!-- Replace VIDEO_ID with the real YouTube video ID -->
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video: how to do a hand release push up" allowfullscreen></iframe>
-      </article>
-
-      <article class="exercise">
-        <h3>Sit Up</h3>
-        <ul>
-          <li>Shoulder blades touch the ground</li>
-          <li>Elbows reach the knees</li>
-          <li>Feet held by a partner</li>
-          <li>Controlled tempo</li>
-        </ul>
-        <figure>
-          <img src="images/situp.jpg" alt="Cadet doing a sit up with elbows reaching the knees while a partner holds the feet">
-          <figcaption>Sit up with a partner holding the feet.</figcaption>
-        </figure>
-        <!-- Replace VIDEO_ID with the real YouTube video ID -->
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video: how to do a sit up" allowfullscreen></iframe>
-      </article>
-
-      <article class="exercise">
-        <h3>2-Mile Run Pacing</h3>
-        <ul>
-          <li>Run the first lap at goal split, not faster</li>
-          <li>Know your 400 m split</li>
-          <li>Relax shoulders and hands</li>
-          <li>Finish the last 400 m strong</li>
-        </ul>
-        <figure>
-          <img src="images/run.jpg" alt="Cadets running laps on a track">
-          <figcaption>Pacing the 2-mile run on the track.</figcaption>
-        </figure>
-        <!-- Replace VIDEO_ID with the real YouTube video ID -->
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video: how to pace the 2-mile run" allowfullscreen></iframe>
-      </article>
-
-      <article class="exercise">
-        <h3>Plank</h3>
-        <ul>
-          <li>Forearms on the ground</li>
-          <li>Straight line from head to heels</li>
-          <li>Squeeze glutes and brace the core</li>
-          <li>Breathe</li>
-        </ul>
-        <figure>
-          <img src="images/plank.jpg" alt="Person holding a forearm plank with a straight line from head to heels">
-          <figcaption>Forearm plank. Photo: Wikimedia Commons, CC BY-SA 3.0</figcaption>
-        </figure>
-        <!-- Replace VIDEO_ID with the real YouTube video ID -->
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video: how to hold a plank" allowfullscreen></iframe>
-      </article>
-    </section>
-
-    <!-- ===== SECTION 3: ALTERNATE EXERCISES ===== -->
-    <section id="alternate-exercises">
-      <h2>Alternate Exercises</h2>
-      <div class="table-wrap">
-        <table>
-          <caption>Swap by muscle group</caption>
-          <thead>
-            <tr>
-              <th scope="col">Muscle Group</th>
-              <th scope="col">Primary Exercise</th>
-              <th scope="col">Alternate 1</th>
-              <th scope="col">Alternate 2</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Chest</th>
-              <td>Bench press</td>
-              <td>Push up</td>
-              <td>Dumbbell floor press</td>
-            </tr>
-            <tr>
-              <th scope="row">Back</th>
-              <td>Bent-over row</td>
-              <td>Lat pulldown</td>
-              <td>Inverted row</td>
-            </tr>
-            <tr>
-              <th scope="row">Shoulders</th>
-              <td>Overhead press</td>
-              <td>Lateral raise</td>
-              <td>Pike push up</td>
-            </tr>
-            <tr>
-              <th scope="row">Legs</th>
-              <td>Back squat</td>
-              <td>Goblet squat</td>
-              <td>Walking lunge</td>
-            </tr>
-            <tr>
-              <th scope="row">Core</th>
-              <td>Sit up</td>
-              <td>Plank</td>
-              <td>Leg raise</td>
-            </tr>
-            <tr>
-              <th scope="row">Cardio</th>
-              <td>Run</td>
-              <td>Bike</td>
-              <td>20-meter shuttle run</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- ===== SECTION 4: NUTRITION, BLOODWORK, AND RECOVERY ===== -->
-    <section id="reference">
-      <h2>Reference: Nutrition, Bloodwork, and Recovery</h2>
-
-      <h3>Macros</h3>
-      <p>If you train 5 days a week, your food has to keep up. <strong>Protein</strong> helps your muscles repair after lifting and running. <strong>Carbs</strong> are your main fuel for runs and hard sessions. <strong>Fats</strong> support your hormones and give you steady energy. A simple approach is to build each meal around a protein source, a carb, and some healthy fat. <em>This is general guidance, not a personal nutrition plan.</em></p>
-
-      <h3>Understanding Your Bloodwork</h3>
-      <p>A provider may check these common markers:</p>
-      <ul>
-        <li><strong>Vitamin D:</strong> helps keep bones strong, which matters when you run a lot of miles.</li>
-        <li><strong>Iron / ferritin:</strong> iron helps carry oxygen in your blood, and low levels can make runs feel much harder.</li>
-        <li><strong>B12:</strong> helps your body make red blood cells and turn food into energy.</li>
-      </ul>
-      <p class="warning"><strong>Talk to a medical provider before taking any supplement.</strong></p>
-
-      <h3>Recovery</h3>
-      <ul>
-        <li>Sleep</li>
-        <li>Hydration</li>
-      </ul>
-
-      <!-- Replace the placeholder quote and the cite URL with the exact official source page -->
-      <blockquote cite="https://www.afpc.af.mil/Career-Management/Fitness-Program/">
-        <p>[Placeholder quote: replace with an exact quote about recovery from an official Air Force or Space Force fitness source.]</p>
-      </blockquote>
-
-      <ul>
-        <li><a href="https://www.hprc-online.org">Human Performance Resources by CHAMP</a></li>
-        <li><a href="https://www.opss.org">Operation Supplement Safety</a></li>
-      </ul>
-    </section>
-
-    <!-- ===== SECTION 5: REQUEST FORM ===== -->
-    <section id="request-form">
-      <h2>Request an Alternate Exercise</h2>
-
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Alternate exercise request</legend>
-
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name">
-
-          <label for="flight">Flight</label>
-          <select id="flight" name="flight">
-            <option value="A1">A1</option>
-            <option value="A2">A2</option>
-            <option value="A4">A4</option>
-            <option value="A5">A5</option>
-            <option value="A6">A6</option>
-          </select>
-
-          <label for="day">Workout day</label>
-          <select id="day" name="day">
-            <option value="Monday">Monday</option>
-            <option value="Tuesday">Tuesday</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Friday">Friday</option>
-            <option value="Saturday">Saturday</option>
-            <option value="Sunday">Sunday</option>
-          </select>
-
-          <label for="exercise">Exercise to swap</label>
-          <input type="text" id="exercise" name="exercise">
-
-          <label for="limits">What limits you</label>
-          <textarea id="limits" name="limits" rows="4"></textarea>
-
-          <button type="submit">Submit Request</button>
-        </fieldset>
-      </form>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>Maintained by the Det 605 Physical Fitness Officer</p>
-    <p>2026</p>
-  </footer>
-
-</body>
+        <footer>
+            <p>Created by Eric Del Orefice</p>
+        </footer>
+    </body>
 </html>
