@@ -1,0 +1,101 @@
+/* Float version - CSC 1210 */
+/* The two columns are made with float instead of flexbox or grid */
+
+body {
+    font-family: "Lora", serif;
+    font-size: 12pt;
+    background-color: #f4efe6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0px 15px;
+}
+
+h2, h3, h4 {
+    font-family: "Cinzel", serif;
+}
+
+h1 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 40pt;
+    margin: 0px;
+}
+
+header {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: #8a6d3b;
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: #3b2f2f;
+    border-width: 0px 2px 4px 2px;
+}
+
+nav a {
+    color: white;
+    margin-right: 25px;
+}
+
+/* main has to clear its floated children or it collapses to no height */
+main {
+    overflow: auto;
+    margin: 20px 0px;
+}
+
+/* the article floats left and takes about two thirds */
+article {
+    float: left;
+    width: 64%;
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid #c9b99a;
+    box-sizing: border-box;
+}
+
+/* the aside floats right into the gap beside it */
+aside {
+    float: right;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+#dates {
+    display: inline-block;
+    background-color: #e6dccb;
+    border: 1px solid #8a6d3b;
+    padding: 5px 12px;
+}
+
+#painting {
+    border: 5px solid #8a6d3b;
+    margin: 10px 0px;
+}
+
+.box {
+    background-color: #e6dccb;
+    padding: 15px 20px;
+    border: 2px solid #8a6d3b;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    border-left: 6px solid #8a6d3b;
+    padding-left: 10px;
+}
+
+.verse {
+    font-size: 10pt;
+    margin-top: 5px;
+}
+
+/* clear makes the footer drop below both floated columns */
+footer {
+    clear: both;
+    background-color: #3b2f2f;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
