@@ -4,26 +4,44 @@ title: Projects
 permalink: /projects/
 ---
 
-Coursework from CSC-1210 Web Site Development at High Point University, Fall 2026. The cards below sit in a CSS Grid that goes from one column on a phone, to two on a tablet, to three on a laptop.
+Coursework from CSC-1210 Web Site Development at High Point University, Fall 2026. Every link opens in a new tab.
 
 <div class="project-grid">
 
 <div class="project-card">
-<h3><a href="/inspired-by/">Inspired By</a></h3>
-<p>A page about a historical figure who inspires me. Built with semantic HTML and CSS Grid, responsive across three breakpoints, and layered on top of a reset stylesheet. It started as a Flexbox layout and was rebuilt twice as the class moved from Flexbox to Grid to responsive design.</p>
-<span class="tag">HTML5</span><span class="tag">Grid</span><span class="tag">Responsive</span>
+<h3><a href="/InspireFloat/" target="_blank">Inspires Me - Float</a></h3>
+<p>The two columns are made with the float property. The article floats left, the aside floats right, and the footer clears both. This is how layouts were built before Flexbox and Grid existed.</p>
+<span class="tag">HTML5</span><span class="tag">Float</span>
 </div>
 
 <div class="project-card">
-<h3><a href="/js-practice/">JavaScript Practice</a></h3>
-<p>In-class JavaScript. Uses getElementById to change HTML content, swap the src attribute on images, and change styles on the fly. Click the buttons to swap the light bulb and the tachometer.</p>
-<span class="tag">JavaScript</span><span class="tag">DOM</span>
+<h3><a href="/InspireFlexbox/" target="_blank">Inspires Me - Flexbox</a></h3>
+<p>The same page rebuilt with Flexbox. Uses display, flex-direction, flex-wrap, flex-flow, justify-content, align-items and align-content.</p>
+<span class="tag">HTML5</span><span class="tag">Flexbox</span>
 </div>
 
 <div class="project-card">
-<h3><a href="/bootstrap/">Bootstrap Practice</a></h3>
-<p>A four column Bootstrap 4 layout built on the twelve column grid, with an alert, a set of buttons, a card and a progress bar.</p>
-<span class="tag">Bootstrap 4</span><span class="tag">Components</span>
+<h3><a href="/InspireGrid/" target="_blank">Inspires Me - Grid</a></h3>
+<p>The same page again with CSS Grid. Uses the container properties for rows and columns and the item properties for placing the article and the sidebar boxes.</p>
+<span class="tag">HTML5</span><span class="tag">Grid</span>
+</div>
+
+<div class="project-card">
+<h3><a href="/inspired-by/" target="_blank">Inspires Me - Responsive</a></h3>
+<p>The Grid version with a reset stylesheet and media queries on top. One column on a phone, two on a tablet, three on a laptop.</p>
+<span class="tag">Responsive</span><span class="tag">Reset</span>
+</div>
+
+<div class="project-card">
+<h3><a href="/BlackbirdATLAS/" target="_blank">3 Week AI Project</a></h3>
+<p>Blackbird ATLAS, a fitness training site for AFROTC Detachment 605. One prompt was given to Claude, Copilot and Gemini, then all three builds were tested, measured across browsers and corrected. This is the corrected Claude build, which validates clean on the W3C HTML and CSS checkers.</p>
+<span class="tag">AI Build</span><span class="tag">Validated</span>
+</div>
+
+<div class="project-card">
+<h3>Business / Org Website</h3>
+<p>The final project. Phase I, choosing the business, is submitted. Phases 2 and 3 are due 11/16, and the site will be linked here once it is built.</p>
+<span class="tag">In progress</span>
 </div>
 
 </div>
@@ -37,6 +55,7 @@ Coursework from CSC-1210 Web Site Development at High Point University, Fall 202
 <ul>
 <li>Semantic HTML5 structure: header, nav, main, section, article, aside, footer</li>
 <li>CSS selectors, the box model, borders, padding and margins</li>
+<li>Float layouts and clearing</li>
 <li>Flexbox for one dimensional layout</li>
 <li>CSS Grid for two dimensional layout</li>
 <li>Responsive design with media queries for mobile, tablet and desktop</li>
