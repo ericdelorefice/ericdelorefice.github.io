@@ -1,0 +1,143 @@
+/* Grid version - CSC 1210 */
+/* Units: pt is absolute (text), px is used for spacing and borders */
+
+/* ---------- CONTAINER PROPERTIES ---------- */
+
+/* The page itself is one column with four rows:
+   header, nav, main, footer */
+body {
+    font-family: "Lora", serif;
+    font-size: 12pt;
+    background-color: #f4efe6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0px 15px;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    row-gap: 20px;
+}
+
+h2, h3, h4 {
+    font-family: "Cinzel", serif;
+}
+
+h1 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 40pt;
+    margin: 0px;
+}
+
+header {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 20px;
+
+    grid-row: 1;
+}
+
+/* gap is the shorthand for row-gap and column-gap */
+/* grid-row-start and grid-row-end written out the long way */
+nav {
+    background-color: #8a6d3b;
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: #3b2f2f;
+    border-width: 0px 2px 4px 2px;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    gap: 10px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+nav a {
+    color: white;
+}
+
+/* This is the two column part of the page:
+   the article takes 2 shares of the width, the aside takes 1 */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+    grid-row: 3;
+}
+
+article {
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid #c9b99a;
+
+    display: grid;
+    row-gap: 10px;
+    grid-column: 1;
+}
+
+/* align-content pushes the two boxes to the top of the column
+   instead of stretching them down the whole page */
+aside {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    align-content: start;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* place-content is the shorthand for align-content and justify-content */
+footer {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 10px;
+
+    display: grid;
+    place-content: center;
+    grid-row: 4;
+}
+
+/* ---------- GRID ITEM PROPERTIES ---------- */
+
+/* justify-self: start makes the box shrink to fit the text
+   instead of stretching across the whole column */
+#dates {
+    background-color: #e6dccb;
+    border: 1px solid #8a6d3b;
+    padding: 5px 12px;
+    justify-self: start;
+}
+
+/* place-self is the shorthand for align-self and justify-self */
+#painting {
+    border: 5px solid #8a6d3b;
+    place-self: center;
+}
+
+/* order moves this box above the quote box without touching the HTML */
+#links {
+    order: 1;
+}
+
+#quote {
+    order: 2;
+    align-self: start;
+}
+
+/* Class: used more than once */
+.box {
+    background-color: #e6dccb;
+    padding: 15px 20px;
+    border: 2px solid #8a6d3b;
+}
+
+.highlight {
+    border-left: 6px solid #8a6d3b;
+    padding-left: 10px;
+}
+
+.verse {
+    font-size: 10pt;
+    margin-top: 0px;
+}
