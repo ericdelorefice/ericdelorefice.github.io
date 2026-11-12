@@ -9,6 +9,12 @@ Coursework from CSC-1210 Web Site Development at High Point University, Fall 202
 <div class="project-grid">
 
 <div class="project-card">
+<h3><a href="/MicroProjects/" target="_blank">Micro Projects</a></h3>
+<p>Three smaller assignments from the first half of the semester: a personal profile page in plain HTML, a class schedule table, and a restaurant reservation form.</p>
+<span class="tag">HTML5</span><span class="tag">Tables</span><span class="tag">Forms</span>
+</div>
+
+<div class="project-card">
 <h3><a href="/InspireFloat/" target="_blank">Inspires Me - Float</a></h3>
 <p>The two columns are made with the float property. The article floats left, the aside floats right, and the footer clears both. This is how layouts were built before Flexbox and Grid existed.</p>
 <span class="tag">HTML5</span><span class="tag">Float</span>
