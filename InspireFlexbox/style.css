@@ -1,0 +1,117 @@
+/* Flexbox version - CSC 1210 */
+/* Units: pt is absolute (text), px is used for spacing and borders */
+
+body {
+    font-family: "Lora", serif;
+    font-size: 12pt;
+    background-color: #f4efe6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0px 15px;
+
+    /* display + flex-direction: stacks header, nav, main, footer */
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3, h4 {
+    font-family: "Cinzel", serif;
+}
+
+h1 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 40pt;
+    margin: 0px;
+}
+
+header {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 20px;
+}
+
+/* flex-wrap + justify-content + align-items */
+nav {
+    background-color: #8a6d3b;
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: #3b2f2f;
+    border-width: 0px 2px 4px 2px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    padding: 5px 0px;
+}
+
+/* flex-flow: the shorthand that does flex-direction and flex-wrap in one line */
+/* align-content: lines up the wrapped rows */
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+article {
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid #c9b99a;
+
+    /* grows to take up the leftover space, but will not squeeze below 400px */
+    flex: 3 1 400px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 220px;
+}
+
+/* inline-flex: the box shrinks to fit the text instead of filling the whole line */
+#dates {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e6dccb;
+    border: 1px solid #8a6d3b;
+    padding: 5px 12px;
+}
+
+/* IDs: each one is used once on the page */
+#painting {
+    border: 5px solid #8a6d3b;
+    margin: 10px 0px;
+}
+
+/* Class: used more than once */
+.box {
+    background-color: #e6dccb;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #8a6d3b;
+}
+
+.highlight {
+    border-left: 6px solid #8a6d3b;
+    padding-left: 10px;
+}
+
+.verse {
+    font-size: 10pt;
+    margin-top: 0px;
+}
+
+footer {
+    background-color: #3b2f2f;
+    color: white;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
